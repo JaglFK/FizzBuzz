@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+    Created on : 08.07.2020
+    Author     : Jacob Keilhauer
+-->
+<html>
+    <head lang="de-DE">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimal-ui">
+        <meta charset="UTF-8">
+        <title>FizzBuzz</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/lgc-fzbz-min.js" type="text/javascript"></script>
+        <link href="assets/css/stl-fzbz-min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="content-wrapper">
+                <div class="nav-container">
+                    <h1 data-shadow="FizzBuzz">FizzBuzz</h1>
+                </div>
+                <div class="styled-container center-container center-content">  
+                    <h3>FizzBuzz-Ergebnisse erstellen</h3><br>
+                    <div class="form-content">
+                        <h6>Start</h6><input class="fzbz-inp-text-num" id="txtStartNum" min="1" value="1" placeholder="Start" type="number"><br>
+                        <h6>Stop</h6><input class="fzbz-inp-text-num" id="txtStopNum"  min="1" value="20" placeholder="Stop" type="number"><br><br>
+                        <input class="fzbz-inp-btn" id="btnPlay" type="button" value="Erstellen">
+                    </div>
+                </div>
+                <div class="styled-container center-container eval-container">
+                    <div class="evaluation-content">
+                        <div><h3>Ergebnisse</h3></div>
+                        <ul id="content-ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
